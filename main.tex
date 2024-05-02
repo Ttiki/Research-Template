@@ -20,31 +20,58 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
 %Load glossary
-\loadglsentries{bib/glossaries/abbreviation}
+% \loadglsentries{bib/glossaries/abbreviation}
+% \makeglossaries
 
 \begin{document}
 
-\title{\\
-{\footnotesize \textsuperscript{}}
-\thanks{}
+\title{Conference Paper Title*\\
+{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+should not be used}
+\thanks{Identify applicable funding agency here. If none, delete this.}
 }
 
-\author{\IEEEauthorblockN{Clément Combier}
-\IEEEauthorblockA{\textit{Master 2 SIGLIS} \\
-\textit{Université de Pau et des Pays de l'Adour}\\
-Anglet, France \\
-clement.combier@etud.univ-pau.fr}}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+}
+
 \maketitle
+
 \thispagestyle{plain}
 \pagestyle{plain}
-
-%\tableofcontents
-%\vspace{16pt}
-% \listoffigures
-% \vspace{16pt}
-% \listoftables
-% \vspace{16pt}
-% \printglossary[type=\acronymtype, title=Accronymes, toctitle=Accronymes]
 
 \vspace{32pt}
 \begin{abstract}
@@ -63,20 +90,19 @@ clement.combier@etud.univ-pau.fr}}
 \label{sec:introduction}  
 \subfile{sections/introduction}
 
-
 \vspace{16pt}
 \section{Acknowledgment}
 \label{sec:aknow}
 \lipsum[1]
 \vspace{12pt}
 
-\bibliographystyle{plain}
-\bibliography{bib/references}
-\printglossary
+% \bibliographystyle{plain}
+% \bibliography{bib/references}
+% \printglossary[type=\acronymtype, title=Accronymes, toctitle=Accronymes]
 
-\listoffigures
-\vspace{16pt}
-\listoftables
-\vspace{16pt}
+% \listoffigures
+% \vspace{16pt}
+% \listoftables
+% \vspace{16pt}
 
 \end{document}
