@@ -1,0 +1,82 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+%Loading packages
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{subfiles}
+\usepackage[toc]{glossaries}
+\usepackage{listings}
+\usepackage{lipsum}
+
+%Style coding
+%\restylefloat{table}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+%Load glossary
+\loadglsentries{bib/glossaries/abbreviation}
+
+\begin{document}
+
+\title{\\
+{\footnotesize \textsuperscript{}}
+\thanks{}
+}
+
+\author{\IEEEauthorblockN{Clément Combier}
+\IEEEauthorblockA{\textit{Master 2 SIGLIS} \\
+\textit{Université de Pau et des Pays de l'Adour}\\
+Anglet, France \\
+clement.combier@etud.univ-pau.fr}}
+\maketitle
+\thispagestyle{plain}
+\pagestyle{plain}
+
+%\tableofcontents
+%\vspace{16pt}
+% \listoffigures
+% \vspace{16pt}
+% \listoftables
+% \vspace{16pt}
+% \printglossary[type=\acronymtype, title=Accronymes, toctitle=Accronymes]
+
+\vspace{32pt}
+\begin{abstract}
+
+\lipsum[10]
+
+\end{abstract}
+\vspace{8pt}
+
+\begin{IEEEkeywords}
+\lipsum[2]
+\end{IEEEkeywords}
+\vspace{16pt}
+
+\section{Introduction}
+\label{sec:introduction}  
+\subfile{sections/introduction}
+
+
+\vspace{16pt}
+\section{Acknowledgment}
+\label{sec:aknow}
+\lipsum[1]
+\vspace{12pt}
+
+\bibliographystyle{plain}
+\bibliography{bib/references}
+\printglossary
+
+\listoffigures
+\vspace{16pt}
+\listoftables
+\vspace{16pt}
+
+\end{document}
